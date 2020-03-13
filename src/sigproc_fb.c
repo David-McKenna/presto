@@ -140,6 +140,10 @@ void get_telescope_name(int telescope_id, struct spectra_info *s)
         strcpy(s->telescope, "KAT-7");
         s->beam_FWHM = default_beam;
         break;
+    case 1916:
+        strcpy(s->telescope, "I-LOFAR");
+        s->beam_FWHM = default_beam;
+        break;
     default:
         strcpy(s->telescope, "Unknown");
         s->beam_FWHM = default_beam;
